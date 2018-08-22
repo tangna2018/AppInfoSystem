@@ -5,7 +5,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="cn.appsys.dao.Backend_user.Backend_userMapper">
 
-	<select id="getBackendLoginMessage" resultType="Backend_user">
+	<!-- <select id="getBackendLoginMessage" resultType="Backend_user">
 		SELECT
 		`id`,`userCode`,`userName`,`userType`,`createdBy`,`creationDate`,`modifyBy`,
 		`modifyDate`,`userPassword`
@@ -14,7 +14,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		WHERE `userName`=#{userName} and `userPassword`=#{userName}
 	</select>
 		
-
+ -->
 </mapper> 
 
 

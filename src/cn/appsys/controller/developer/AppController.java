@@ -5,7 +5,7 @@ import javax.annotation.Resource;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 
-import cn.appsys.service.Backend.AppInfoService;
+import cn.appsys.service.developer.AppInfoService;
 
 @Controller
 public class AppController {
