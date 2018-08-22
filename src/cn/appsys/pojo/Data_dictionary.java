@@ -1,19 +1,18 @@
 package cn.appsys.pojo;
 
 import java.util.Date;
-
+//数据字典查询表
 public class Data_dictionary {
 	
-	  private Integer id;
-	  private String typeCode;
-	  private String typeName;
-	  private Integer valueId;
-	  private String valueName;
-	  private Integer createdBy;
-	  private Date creationDate;
-	  private Integer modifyBy;
-	  private Date modifyDate;
-	
+	  private Integer id;           //NOT NULL主键ID
+	  private String typeCode;      //varchar(50) NULL类型编码
+	  private String typeName;      //varchar(50) NULL类型名称
+	  private Integer valueId;      //bigint(30) NULL类型值ID
+	  private String valueName;     //varchar(50) NULL类型值Name
+	  private Integer createdBy;    //bigint(30) NULL创建者（来源于backend_user用户表的用户id）
+	  private Date creationDate;    //datetime NULL创建时间
+	  private Integer modifyBy;     //NULL更新者（来源于backend_user用户表的用户id）
+	  private Date modifyDate;      //datetime NULL最新更新时间
 	  
 	  
 	public Integer getId() {

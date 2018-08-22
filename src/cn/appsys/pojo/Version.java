@@ -1,7 +1,7 @@
 package cn.appsys.pojo;
 
 import java.util.Date;
-
+//App版本信息表
 public class Version {
 	  private Integer id;//主键id
 	  private Integer appId;//appId（来源于：app_info表的主键id）

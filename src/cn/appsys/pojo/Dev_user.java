@@ -1,19 +1,19 @@
 package cn.appsys.pojo;
 
 import java.util.Date;
-
+//开发者用户表
 public class Dev_user {
 	
-	private Integer id;
-	private String devCode;
-	private String devName;
-	private String devPassword;
-	private String devEmail;
-	private String devInfo;
-	private Integer createdBy;
-	private Date creationDate;
-	private Integer modifyBy;
-	private Date modifyDate;
+	private Integer id;            //bigint(30) NOT NULL主键id
+	private String devCode;        //varchar(50) NULL开发者帐号
+	private String devName;        //varchar(50) NULL开发者名称
+	private String devPassword;    //varchar(50) NULL开发者密码
+	private String devEmail;       //varchar(50) NULL开发者电子邮箱
+	private String devInfo;        //varchar(500) NULL开发者简介
+	private Integer createdBy;     //bigint(30) NULL创建者（来源于backend_user用户表的用户id）
+	private Date creationDate;     //datetime NULL创建时间
+	private Integer modifyBy;      //bigint(30) NULL更新者（来源于backend_user用户表的用户id）
+	private Date modifyDate;       //datetime NULL最新更新时间
 	public Integer getId() {
 		return id;
 	}

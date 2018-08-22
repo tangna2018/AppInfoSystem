@@ -1,7 +1,7 @@
 package cn.appsys.pojo;
 
 import java.util.Date;
-
+//App基础信息表
 public class AppInfo {
 	 private Integer id;//主键id
 	 private String softwareName;//软件名称

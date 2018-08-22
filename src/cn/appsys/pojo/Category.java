@@ -1,7 +1,7 @@
 package cn.appsys.pojo;
 
 import java.util.Date;
-
+//分类表
 public class Category {
 	
 	private Integer id ;         //主键ID

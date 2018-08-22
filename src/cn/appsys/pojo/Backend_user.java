@@ -1,7 +1,7 @@
 package cn.appsys.pojo;
 
 import java.util.Date;
-
+//后台用户表
 public class Backend_user {
 	 private Integer id;//主键ID
 	 private String userCode;//用户编码
