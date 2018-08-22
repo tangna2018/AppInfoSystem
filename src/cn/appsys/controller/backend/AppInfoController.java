@@ -1,11 +1,12 @@
-package cn.appsys.controller;
+package cn.appsys.controller.backend;
 
 import javax.annotation.Resource;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 
-import cn.appsys.service.AppInfo.AppInfoService;
+import cn.appsys.controller.BaseController;
+import cn.appsys.service.Backend.AppInfoService;
 
 @Controller
 public class AppInfoController extends BaseController{

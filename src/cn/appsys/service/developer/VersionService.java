@@ -1,4 +1,4 @@
-package cn.appsys.service.Version;
+package cn.appsys.service.developer;
 
 
 public interface VersionService {

@@ -1,4 +1,4 @@
-package cn.appsys.service.Data_dictionary;
+package cn.appsys.service.developer;
 
 import cn.appsys.dao.AppInfo.AppInfoMapper;
 

@@ -1,4 +1,4 @@
-package cn.appsys.service.Version;
+package cn.appsys.service.developer;
 
 import javax.annotation.Resource;
 
