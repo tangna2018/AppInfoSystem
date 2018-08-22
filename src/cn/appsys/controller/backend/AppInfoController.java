@@ -11,6 +11,6 @@ import cn.appsys.service.Backend.AppInfoService;
 @Controller
 public class AppInfoController extends BaseController{
 		private Logger logger=Logger.getLogger(AppInfoController.class);
-		@Resource
+		@Resource(name="backendAppInfo")
 		private AppInfoService appInfoService;
 }
