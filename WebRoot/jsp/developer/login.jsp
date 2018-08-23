@@ -9,7 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>APP信息管理系统</title>
+    <title>APP开发者平台</title>
+
     <!-- Bootstrap -->
     <link href="${pageContext.request.contextPath }/statics/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -31,11 +32,25 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-            <form>
-              <h1>APP信息管理系统</h1>
+            <form action="dologin" method="post">
+              <h1>APP开发者平台</h1>
               <div>
-                <a href="${pageContext.request.contextPath}/jsp/backend/login.jsp"><h4>后台管理系统入口</h4></a></br>
-                <a href="${pageContext.request.contextPath}/jsp/developer/login.jsp"><h4>开发者平台入口</h4></a>
+                <input type="text" class="form-control" name="devCode" placeholder="请输入用户名" required="" />
+              </div>
+              <div>
+                <input type="password" class="form-control" name="devPassword" placeholder="请输入密码" required="" />
+              </div>
+              <div>
+              	<button type="submit" class="btn btn-success">登     录</button>
+              	<button type="reset" class="btn btn-default">重　填</button>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="separator">
+                <div>
+                  <p>©2016 All Rights Reserved. </p>
+                </div>
               </div>
             </form>
           </section>
