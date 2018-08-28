@@ -8,7 +8,7 @@ import cn.appsys.pojo.Backend_user;
 @Repository
 public interface Backend_userMapper {
 	//后台注册验证
-	public Backend_user getBackendLoginMessage(@Param("userName")String userName,
+	public Backend_user getBackendLoginMessage(@Param("userCode")String userName,
 			@Param("userPassword")String userPassword);
 		
 }

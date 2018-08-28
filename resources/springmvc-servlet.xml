@@ -54,12 +54,16 @@
 	<!-- 3、静态文件(如果前端控制器拦截就加入) -->
 	<mvc:resources location="/statics/" mapping="/statics/**" />
 	<!-- 4、拦截器（如果你需要拦截才加） -->
-	<mvc:interceptors>
+	<!-- <mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/sys/**" />
-			<bean class="cn.appsys.interceptor.SysInterceptor" />
+			<bean class="cn.appsys.interceptor.BackendSysInterceptor" />
 		</mvc:interceptor>
-	</mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/devUser/**" />
+			<bean class="cn.appsys.interceptor.DevUserInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors> -->
 	<!-- 5、文件上传（如果有文件上传才加） -->
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

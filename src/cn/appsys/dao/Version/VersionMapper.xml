@@ -5,7 +5,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="cn.appsys.dao.Version.VersionMapper">
 
-
+		<insert id="addAppVersion" parameterType="Version">
+		INSERT INTO `appinfodb`.`app_version` (`appId`,`versionNo`,`versionInfo`,
+`publishStatus`,`downloadLink`,`versionSize`,`createdBy`,`creationDate`,
+ `modifyBy`, `modifyDate`,`apkLocPath`,`apkFileName`) 
+VALUES
+  (#{appId},#{versionNo},#{versionInfo},#{publishStatus},#{downloadLink},
+    #{versionSize}, #{createdBy},#{creationDate}, #{modifyBy},#{modifyDate},
+    #{apkLocPath}, #{apkFileName}) 
+		</insert>
 	
 </mapper> 
 

@@ -4,7 +4,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="cn.appsys.dao.Data_dictionary.Data_dictionaryMapper">
-
+	<select id="getAPP_FLATFORM" resultType="Data_dictionary">
+		SELECT
+		`id`,`typeCode`,`typeName`,`valueId`,`valueName`,`createdBy`,
+		`creationDate`,`modifyBy`,`modifyDate`
+		FROM
+		`appinfodb`.`data_dictionary`
+		WHERE typeCode=#{typeCode}
+	</select>
 
 </mapper> 
 

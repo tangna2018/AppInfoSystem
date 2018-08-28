@@ -24,21 +24,21 @@ public class Backend_userLoginController  extends BaseController {
 	
 	@RequestMapping("/backend_userLogin.html")
 	public String login(){
-		return "backend_userLogin";
+		return "backend/login";
 	}
 	
 	
 	@RequestMapping("/dobackend_userLogin.html")
-	public String dologin(@RequestParam(value="userName")String userName,
+	public String dologin(@RequestParam(value="userCode")String userCode,
 			@RequestParam(value="userPassword")String userPassword,Model model,HttpSession session){
-		Backend_user buser=	backend_userService.getBackendLoginMessage(userName, userPassword);
+		Backend_user buser=	backend_userService.getBackendLoginMessage(userCode, userPassword);
 		if(null==buser){
 			model.addAttribute("backend_userMessage", "用户名和密码不匹配");
+			return "backend_userLogin";
 		}else{
 			session.setAttribute(Constants.BACKEND_USER_SESSION,buser);
 			return "redirect:/sys/backend_userMain.html";
 		}
-		return "backend_userLogin";
 		
 	}
 	
@@ -51,4 +51,26 @@ public class Backend_userLoginController  extends BaseController {
 	
 	
 	
+	//注销
+	@RequestMapping("/outBackend_user.html")
+	public String outBackend_user(HttpSession session){
+		//删除会话
+		session.removeAttribute(Constants.BACKEND_USER_SESSION);
+		
+		return "backend_userLogin";//注销后返回登录页面
+	}
+	
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
+

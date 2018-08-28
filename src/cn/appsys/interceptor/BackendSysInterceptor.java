@@ -9,7 +9,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import cn.appsys.pojo.Backend_user;
 import cn.appsys.pojo.Dev_user;
 import cn.appsys.tools.Constants;
-public class SysInterceptor extends HandlerInterceptorAdapter {
+public class BackendSysInterceptor extends HandlerInterceptorAdapter {
 
 	public boolean preHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler) throws Exception {
@@ -17,11 +17,8 @@ public class SysInterceptor extends HandlerInterceptorAdapter {
 		HttpSession session = request.getSession();
 
 		Backend_user backend_user = (Backend_user) session.getAttribute(Constants.BACKEND_USER_SESSION);
-		Dev_user dev_user = (Dev_user) session.getAttribute(Constants.DEV_USER_SESSION);
 		
 		if (null!= backend_user) {
-			return true;
-		}else if(null!= dev_user){
 			return true;
 		}else{
 			response.sendRedirect(request.getContextPath() + "/401.jsp");

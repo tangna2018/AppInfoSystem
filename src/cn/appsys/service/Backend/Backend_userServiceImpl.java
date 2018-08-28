@@ -11,7 +11,7 @@ public class Backend_userServiceImpl implements  Backend_userService {
 	@Resource
 	private Backend_userMapper Backend_userMapper;
 	//后台注册验证
-	public Backend_user getBackendLoginMessage(String userName,String userPassword) {
-		return Backend_userMapper.getBackendLoginMessage(userName, userPassword);
+	public Backend_user getBackendLoginMessage(String userCode,String userPassword) {
+		return Backend_userMapper.getBackendLoginMessage(userCode, userPassword);
 	}
 }
