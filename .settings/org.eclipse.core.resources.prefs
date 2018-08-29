@@ -1,6 +1,9 @@
 eclipse.preferences.version=1
 encoding//WebRoot/401.jsp=UTF-8
 encoding//WebRoot/index.jsp=UTF-8
+encoding//WebRoot/jsp/backend/rollpage.jsp=UTF-8
+encoding//WebRoot/jsp/developer/appadd.jsp=UTF-8
+encoding//WebRoot/jsp/developer/common/header.jsp=UTF-8
 encoding//WebRoot/jsp/developer/main.jsp=UTF-8
 encoding//src/cn/appsys/interceptor/SysInterceptor.java=UTF-8
 encoding/<project>=GBK
